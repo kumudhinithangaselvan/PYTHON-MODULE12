@@ -1,36 +1,51 @@
-# 🔁 Queue using Linked List: Display Front and Rear Elements of a Queue
+# 🌀 Queue using Linked List - Insert, Display, and Delete
 
 ## 🎯 Aim
 
-To write a Python program to:
-- Insert elements into a queue.
-- Display the element at the **front** of the queue.
-- Display the element at the **rear** of the queue.
+To write a Python program that:
+- Inserts elements into a queue.
+- Displays all inserted elements.
+- Deletes the first element.
+- Displays the updated queue after deletion.
 
 ---
 
 ## 🧠 Algorithm
 
-1. **Initialize Queue**:
-   - Create an empty list called `queue`.
+1. **Create a Queue**:
+   - Initialize an empty list named `queue`.
 
 2. **Insert Elements**:
-   - Use the `append()` method to add `'a'`, `'b'`, `'c'`, and `'d'` to the queue.
+   - Use the `append()` method to insert elements `'a'`, `'b'`, and `'c'` into the queue.
 
 3. **Display Initial Queue**:
-   - Print `"Initial Queue:"` followed by the current state of the queue.
+   - Print the message `"Queue after elements are inserted:"` followed by the queue contents.
 
-4. **Identify Front and Rear**:
-   - Set `front = queue[0]` for the front element.
-   - Set `rear = queue[-1]` for the rear element.
+4. **Delete First Element**:
+   - Use `pop(0)` to remove the first inserted element (FIFO - First In First Out).
+   - Print the message `"Deleting the first element inserted:"` and the element removed.
 
-5. **Print Results**:
-   - Display the front and rear elements with appropriate messages.
+5. **Display Updated Queue**:
+   - Print the message `"Queue after the first element is deleted:"` followed by the updated queue contents.
 
 ---
-## Program
-Add code here
 
+## Program
+Add Code Here
+```
+  queue = []
+  queue.append('a')
+  queue.append('b')
+  queue.append('c')
+  print('Queue after elements are inserted:')
+  print(queue)
+  print('Deleting the first element inserted:')
+  print(queue.pop(0))
+  print('Queue after the first elements is deleted:')
+  print(queue)
+```
 ## Output
+![image](https://github.com/user-attachments/assets/fb45b2c2-2364-43d6-8863-ecd4f082f597)
 
 ## Result
+Thus, the program has been execueted successfully.
